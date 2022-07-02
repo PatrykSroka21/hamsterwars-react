@@ -1,2 +1,2 @@
-# hamsterwars-react
-fullstack project for hamsterwars
+# React-Recoil-Hamsterwars
+ 
