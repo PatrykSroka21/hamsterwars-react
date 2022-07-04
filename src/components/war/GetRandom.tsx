@@ -167,7 +167,7 @@ const GetRandom = () => {
             {wellPlayed1 ? <div>
               <p>Won {lost?.wins} Lost {lost?.defeats}</p> </div> : null}
 
-            <button className={styles.vote} disabled={wellPlayed || wellPlayed1} onClick={winningHamsOne}>Vote for me!</button>
+            <button className={styles.vote} disabled={wellPlayed || wellPlayed1} onClick={winningHamsOne}>I am the cutest!</button>
           </div> : <p>...</p>
         }
       </div>
