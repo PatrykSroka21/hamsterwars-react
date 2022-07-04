@@ -1,19 +1,23 @@
 .container {
-    text-align: center;
-  }
-  
-  .add{
-    background-color: aquamarine;
-    margin: 5px;
-    display: contents;
-    font-size: large;
-    font-weight: bold;
-    color: brown;
-  }
+  text-align: center;
+}
 
-  .add:hover{
-    color: blue;
-  }
-  
- 
-  
+.add {
+  background-color: aquamarine;
+  margin: 5px;
+  display: contents;
+  font-size: large;
+  font-weight: bold;
+  color: brown;
+}
+
+button {
+  border-radius: 10px;
+  color: black;
+}
+button:hover {
+  height: 55px;
+  width: 250px;
+  background-color: rgb(255, 22, 224);
+  transition: width 600ms ease-out, height 600ms ease-out;
+}

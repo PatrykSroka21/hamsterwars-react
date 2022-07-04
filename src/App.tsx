@@ -8,10 +8,9 @@ function App() {
   return (
     <div className="app">
       <header>
-      <h2> Hamsters war - a website where fun begins!</h2>
         <nav>
           <Link to="/"> Start</Link>
-          <Link to="/war"> Hamsterswar </Link>
+          <Link to="/war"> Battle </Link>
           <Link to="/Gallery"> Gallery </Link>
         </nav>
         

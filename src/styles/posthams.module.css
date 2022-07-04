@@ -1,5 +1,6 @@
 .forms {
-    margin: 2rem;
-    padding: 0.5rem;
-    border-radius: 20px;
-  }
+  margin: 2rem;
+  padding: 0.5rem;
+  height: 55px;
+  width: 250px;
+}

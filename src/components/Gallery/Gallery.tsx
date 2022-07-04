@@ -24,9 +24,8 @@ const Gallery = () => {
   return (
     <div className={styles.container}>
       <header className={styles.header}>
-        <h2>Add another warrior to the arena?</h2>
         <h3>
-          by fill in all information needed you can add new hamseter to the game{" "}
+          Fill in all the info to add your own hamster to our collection{" "}
         </h3>
 
         <button onClick={() => setToggle(!toggle)}>

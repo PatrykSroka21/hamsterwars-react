@@ -31,16 +31,15 @@ const Start = () => {
     <><section className={styles.container}>
       <main className={styles.flexbox}>
         <article>
-          <h3>Welcome! What all you can do here </h3>
+          <h1>Welcome!</h1>
           <p>
-            You just landed on the Hamster's tiny universe and here you see the
-            most cutest hamsters of the time.<br />
-            On the war page you can vote for the
-            battle for the cutest Hamsters.<br /> In the Gallery, you get the
-            chance to see all hamsters at once.<br /> you also get the chance
-            to add or delete a hamsters.
+            You just landed on the hamsterwars main page see the cutest hamster
+            , let the battle begin to determin the cutest hamster and view the
+            gallery to see all the hamsters add your own hamster or delete any
+            hamster from our collection. 
             <br />
-            Use the navigationbar at the top to explore the Hamster's universe!
+          
+            Explore the Hamster's universe and see what you can find!!
           </p>
         </article>
 
@@ -54,12 +53,12 @@ const Start = () => {
                 className="card__img" />
 
               <div className={styles.card__body}>
-                <h2>{hamster.name} is the most cutest hamster!<p> Total Wins: {hamster.wins}!</p> </h2>
+                <h2>{hamster.name} is the cutest hamster!<p> Total Wins: {hamster.wins}!</p> </h2>
 
               </div>
             </section>
           ))
-          : "Loading"}
+          : "Loading..."}
       </main>
     </section>
     <footer className={styles.footer}>

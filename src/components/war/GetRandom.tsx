@@ -141,22 +141,21 @@ const GetRandom = () => {
 
   return (
     <div className={styles.battle}>
-      <p className={styles.message}>Choose the cutest hamster by clicking on
-      the vote button</p>
+      <p className={styles.message}>Let the fight begin, where you choose the outcome!!</p>
       <div className={styles.voting}>
 
         {hamsOne && hamsTwo ?
           <div className={styles.hamster1}>
             <img className={styles.size} src={picImport(hamsTwo.imgName)} />
-            <h3 className={styles.text}>My name is {hamsTwo.name} and I'm {hamsTwo.age}yrs old</h3>
+            <h3 className={styles.text}>My name is {hamsTwo.name} and I'm {hamsTwo.age}years old</h3>
             {wellPlayed1 ? <div>
               <p>wins {wins?.wins} losts {wins?.defeats}</p> </div> : null}
             {wellPlayed ? <div>
               <p>wins {lost?.wins} losts {lost?.defeats}</p> </div> : null}
 
             <button className={styles.vote} disabled={wellPlayed || wellPlayed1}
-             onClick={winningHamsTwo}>Vote for me!</button>
-          </div> : <p>waiting for next</p>
+             onClick={winningHamsTwo}>I am the cutest!</button>
+          </div> : <p>loading</p>
         }
 
 {hamsOne && hamsTwo ?
@@ -164,20 +163,20 @@ const GetRandom = () => {
             <img className={styles.size} src={picImport(hamsOne.imgName)} />
             <h3 className={styles.text}>My name is {hamsOne.name} and I'm {hamsOne.age}yrs old</h3>
             {wellPlayed ? <div>
-              <p>Wins {wins?.wins} Losts {wins?.defeats}</p> </div> : null}
+              <p>Won {wins?.wins} Lost {wins?.defeats}</p> </div> : null}
             {wellPlayed1 ? <div>
-              <p>Wins {lost?.wins} Losts {lost?.defeats}</p> </div> : null}
+              <p>Won {lost?.wins} Lost {lost?.defeats}</p> </div> : null}
 
             <button className={styles.vote} disabled={wellPlayed || wellPlayed1} onClick={winningHamsOne}>Vote for me!</button>
-          </div> : <p>waiting for the next</p>
+          </div> : <p>...</p>
         }
       </div>
 
       {wins != null ?
         <div className={styles.winninghamster}>
           <p> 🏆The winner is {wins.name} 🏆
-          <br /> Total victory-{wins.wins} <br />Total defeats-{wins.defeats} <br />Total matches-{wins.games} </p>
-          <button className={styles.newbattle}onClick={NewBattle}>Start a new match</button>
+          <br /> Total wins-{wins.wins} <br />Total defeats-{wins.defeats} <br /> Total matches-{wins.games} </p>
+          <button className={styles.newbattle}onClick={NewBattle}>Start a new battle</button>
         </div>
         : <p></p>}
     </div>
